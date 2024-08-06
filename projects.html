@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="flex flex-col min-h-screen bg-black text-white">
+    <a href="index.html" class="text-white p-4 absolute top-4 left-4">
+        <i class="fas fa-home fa-2x"></i>
+    </a>
+    <main class="flex flex-1 flex-col items-center justify-center p-4">
+        <section id="projects" class="w-full max-w-4xl mx-auto bg-gray-900 border rounded-lg shadow-md p-4">
+            <h1 class="text-2xl font-bold mb-4">Projects</h1>
+            <div class="grid grid-cols-1 gap-6">
+                <!-- Project 1 -->
+<div class="box border rounded-lg shadow-md p-4">
+    <img src="youtube-assistant.png" alt="YT Assistant" class="w-full h-40 object-cover object-top mb-4">
+    <h2 class="text-xl font-semibold mb-2">YouTube Assistant</h2>
+    <p class="mb-4"><b>Tech Used:</b> LangChain, Google Gemini 1.5 Flash LLM, MLOps, Sentence Transformer, FAISS, Gradio, Hugging Face</p>
+    <p class="mb-4"><b>Description of the project:</b></p>
+    <ul class="list-disc pl-5 mb-4">
+        <li>An End to End Deployed AI Application!</li>
+        <li>It is an assistant that answers all queries about a YouTube video, saving users from watching the entire video just to find a specific piece of information. This saves users time by providing clarity about the video’s content before they watch it in full. Additionally, users can determine in advance if the video contains the specific information they are seeking.</li>
+        <li>This assistant uses LangChain and Gemini 1.5 Flash model in the backend and uses Meta’s FAISS (Facebook AI Similarity Search) for document similarity search.</li>
+        <li>The frontend (to input the user query and video link, and output the result) is created using Gradio and the website is deployed on Hugging Face.</li>
+    </ul>
+    <div class="flex justify-between">
+        <a href="https://github.com/iamcalledayush/YouTube-Assistant" target="_blank" class="text-yellow-300 hover:underline">GitHub Repo</a>
+        <a href="https://pwnprodigy-youtube-assistant.hf.space/" target="_blank" class="text-yellow-300 hover:underline">Website Link</a>
+    </div>
+</div>
+                <!-- Project 2 -->
+                <div class="box border rounded-lg shadow-md p-4">
+                    <img src="diffusion.png" alt="Diffusion" class="w-full h-40 object-cover mb-4">
+                    <h2 class="text-xl font-semibold mb-2">Photo-realistic Video Generation using Diffusion Models</h2>
+                    <p class="mb-4"><b>Tech Used:</b> Text to Image Diffusion Models, DDIM and DPM Samplers, Image Generation, Generative AI</p>
+                    <p class="mb-4"><b>Description of the project:</b></p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>A research project which aims to improve the state-of-the-art zero-shot text-guided video-to-video framework 'Rerender A Video'.</li>
+                        <li>We implemented modifications to the original paper’s methods for key frame sampling and frame selection.</li>
+                        <li>While the original authors used Uniform Key Frame Selection, we implemented Non-Uniform Key Frame Selection using various methods such as ORB Feature Points Matching, Optical Flow Change Calculation, and ResNet-Based Feature Extraction.</li>
+                        <li>Additionally, we used the DPM solver as a sampler, unlike the original authors who used the DDIM sampler.</li>
+                    </ul>
+                    <div class="flex justify-between">
+                        <a href="https://github.com/ChunhBi/Rerender_A_Video" target="_blank" class="text-yellow-300 hover:underline">GitHub Repo</a>
+                        <a href="Photorealistic Video Generation.pdf" target="_blank" class="text-yellow-300 hover:underline">Project Research Report</a>
+                    </div>
+                </div>
+                <!-- project 3 -->
+                <div class="box border rounded-lg shadow-md p-4">
+                    <img src="wgbh.png" alt="WGBH" class="w-full h-40 object-cover mb-4">
+                    <h2 class="text-xl font-semibold mb-2">Debt Collection project for client "WGBH" (Team Lead)</h2>
+                    <p class="mb-4"><b>Tech Used:</b> Data Science and Analysis, SQL, Python, Pandas, Matplotlib</p>
+                    <p class="mb-4"><b>Description of the project:</b></p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>A Data Science Project, led by me, for the Public Radio and Television Station of Boston, “WGBH,” in Collaboration with Boston University.</li>
+                        <li>We examined 5,000+ debt collection cases (from Massachusetts Court System Database) over 10 years for the client "WGBH",
+                            identifying a 20% rise in debt case filings and a 25% increase in virtual proceedings during pandemic (2020-2021), and
+                            other important insights like 40% capias warrants, 30% wage garnishments, top 10 debt collectors and companies, etc.</li>
+                        <li>I led a team of 4 students in this project.</li>
+                    </ul>
+                    <div class="flex justify-between">
+                        <a href="https://github.com/iamcalledayush/Debt-collection" target="_blank" class="text-yellow-300 hover:underline">GitHub Repo</a>
+                        <a href="WGBH.pdf" target="_blank" class="text-yellow-300 hover:underline">Project Results</a>
+                    </div>
+                </div>
+                <!-- project 4 -->
+                <div class="box border rounded-lg shadow-md p-4">
+                    <img src="GAN.png" alt="GANs" class="w-full h-40 object-cover mb-4">
+                    <h2 class="text-xl font-semibold mb-2">Image Generation using Generative Adversarial Networks</h2>
+                    <p class="mb-4"><b>Tech Used:</b> Data Science and Analysis, SQL, Python, Pandas, Matplotlib</p>
+                    <p class="mb-4"><b>Description of the project:</b></p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>This research project aims to explore various types of GANs.</li>
+                        <li>I Developed various models like basic GAN and BigGAN to generate dog images using the standard Stanford Dog Dataset.</li>
+                        <li>I employed Self Attention and other architectural changes in these models to overcome issues like Mode Collapse, Artifacts problem, etc.</li>
+                    </ul>
+                    <div class="flex justify-between">
+                        <a href="https://github.com/iamcalledayush/Exploring-GANs" target="_blank" class="text-yellow-300 hover:underline">GitHub Repo</a>
+                        <a href="GANs.pdf" target="_blank" class="text-yellow-300 hover:underline">Project Report</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center p-4">
+        <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ayushsharmacorp@gmail.com" target="_blank" class="hover:text-yellow-300">ayushsharmacorp@gmail.com</a> | Phone: <a href="tel:+16173097097" class="hover:text-yellow-300">+1 (617) 309-7097</a></p>
+    </footer>
+</body>
+</html>
