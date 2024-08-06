@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="flex flex-col min-h-screen bg-black text-white">
+    <a href="index.html" class="text-white p-4 absolute top-4 left-4">
+        <i class="fas fa-home fa-2x"></i>
+    </a>
+    <main class="flex flex-1 flex-col items-center justify-center p-4">
+        <section id="introduction" class="mb-12 text-center">
+            <img src="profile-image.png" alt="Profile Image" class="w-32 h-32 rounded-full mx-auto mb-4">
+            <h1 class="text-3xl font-bold mb-2">Ayush Sharma</h1>
+            <h2 class="text-xl font-light mb-4">An aspiring AI and Data Scientist</h2>
+            <p class="text-base mb-8">
+                Hi, I am currently pursuing my Master’s in Artificial Intelligence at Boston University. With a strong foundation in machine learning, data science, and software engineering, I combine academic excellence with hands-on experience. My research focuses on advancing AI in visual reasoning and mathematical tasks.
+                <br>
+                I have interned at Schneider Electric and JP Morgan, gaining experience in Machine Learning and Data Science. My projects showcase skills in MLOps, state-of-the-art LLMs/GPTs, Generative AI, and Data Science. Additionally, I led a team on a Data Science project for WGBH in collaboration with Boston University.
+                <br>
+                I thrive in challenging environments that push me to innovate and apply my skills to solve real-world problems.
+            </p>
+        </section>
+        <section id="links" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a href="projects.html" class="box border rounded-lg shadow-md p-4 flex flex-col items-center hover-grow">
+                <img src="project-image.png" alt="Projects" class="w-full h-40 object-cover mb-4">
+                <h2 class="text-xl font-semibold">Projects</h2>
+            </a>
+            <a href="work-experience.html" class="box border rounded-lg shadow-md p-4 flex flex-col items-center hover-grow">
+                <img src="work-experience-image.png" alt="Work Experience" class="w-full h-40 object-cover mb-4">
+                <h2 class="text-xl font-semibold">Work Experience</h2>
+            </a>
+            <a href="contact.html" class="box border rounded-lg shadow-md p-4 flex flex-col items-center hover-grow">
+                <img src="contact-image.png" alt="Contact Me" class="w-full h-40 object-cover mb-4">
+                <h2 class="text-xl font-semibold">Contact Me</h2>
+            </a>
+            <a href="links.html" class="box border rounded-lg shadow-md p-4 flex flex-col items-center hover-grow">
+                <img src="links-image.png" alt="My Links and Resume" class="w-full h-40 object-cover mb-4">
+                <h2 class="text-xl font-semibold">My Links and Resume</h2>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer text-center p-4">
+        <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ayushsharmacorp@gmail.com" target="_blank" class="hover:text-yellow-300">ayushsharmacorp@gmail.com</a> | Phone: <a href="tel:+16173097097" class="hover:text-yellow-300">+1 (617) 309-7097</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
